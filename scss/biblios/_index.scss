@@ -1,0 +1,340 @@
+/*
+index.css pour index.html
+---------
+Feuille de style pour le projet 3 ohmyfood
+Par Arnaud Ghali
+Version V 6.0 maquettage menu - à la francçaise */ 
+
+@import "typography";
+
+/* Localisation */
+.flex-localisation {
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.localisation {
+  background: #c2bfbfbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* Exploration */
+.exploration {
+  background: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.explorationTitre {
+   display:flex;
+   text-align: center;
+   padding-top: 40px;
+}
+
+.explorationSoustitre{
+    display:flex;
+    text-align: center;
+    color:gray;
+    font-weight: 400;
+}
+
+/* Bouton */
+
+.explorationButton {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: transparent;
+  padding-bottom: 40px;
+  background-color: #F2F2F2;
+  height: 100%;
+  width: 100%;
+}
+
+.explorationRecherche {
+  background: linear-gradient(to bottom, $color-secondaire 10%, $color-secondaire 25%, $color-secondaire 50%, $color-primaire 75%,$color-primaire 85%); 
+  height: 50px;
+  width: 50%;
+  box-shadow: 4px 4px 6px #000;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  padding: 0 24px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color:white;
+  margin: 5px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -ms-border-radius: 25px 25px 25px 25px;
+  -o-border-radius: 25px 25px 25px 25px;
+}
+
+/* Partie fonctionnement */
+.fonctionnement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  width : 100%;
+  padding-left: 20px;
+}
+
+.fonctionnementStep {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+  border: 2px solid #d9d9d9;
+  border-radius: 32px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 32px;
+  background-color: #f2e9f3;
+  position: relative;
+  font-size: large; 
+  font-weight: bold;
+  width: 33%;
+}
+
+.fonctionnementNombre {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: -45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fonctionnementIcon {
+  color:#9356DC;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Partie resultat*/
+.flex-resultat{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-content: center;
+  margin: auto;
+  background-color:#F2F2F2;
+}
+
+  /*Restaurant*/
+.flex-restaurant{ 
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  top : 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  flex-wrap:wrap;
+  align-items: start;
+  align-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.titreRestaurant{
+  display : flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.vignette { /* Grid vignette Restaurant*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  background-color: #F2F2F2;
+  width: 90%;
+  align-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.vignetteD {/* chaque vignette Restaurant*/
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex : 1;
+  flex-direction: column; 
+  line-height: 16px;
+  min-height: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  padding:0;
+}
+
+.vignetteN {
+  /*Logo Nouveau*/
+  background-color: $color-tertiaire;
+  color :green;
+  font-size: large; 
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.vignetteContent {/* texte de la vignette */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vignetteD:hover { /*Puis au survol, soulevons la carte légèrement et rendons l’ombre plus prononcée */
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+.vignetteD .imageRestaurant {
+  padding-bottom: 50%;
+  margin: 5px 5px 5px 5px;
+  background-size:cover;
+  background-position: center center;
+}
+
+.imageRestaurant {
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+object-fit: cover;/* rempli le contenu dans la dimension*/
+}
+
+
+
+/*Definition pour les responsives */
+/* Pour les ecrans type portable*/
+@media only screen and (max-width:768px) {
+
+
+  /* Exploration */
+  .explorationTitre {
+    width: 70%;
+ }
+
+  .explorationRecherche {
+    height: 50px;
+    width: 75%;
+  }
+
+  /* Fonctionnement */
+  .fonctionnement {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .fonctionnementStep {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 32px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 24px;
+    background-color: #f2e9f3;
+    width: 80%;
+  }
+
+
+  /* Resultat */
+  .flex-resultat{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding :0;
+    width :100%;
+  }
+
+/* Restaurants */
+  .flex-restaurant{ 
+    width:100%;
+    margin-left: 0;
+  }
+
+  .vignette {
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    margin-left: 0;
+  }
+
+
+
+}
+/* Pour les ecrans type tablette */
+@media (min-width: 769px) and (max-width:991px) {
+
+
+  /* Resultat */
+  .flex-resultat{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
+    padding :0;
+    width :100%;
+  }
+ 
+  
+/* Restaurants */
+  .flex-restaurant{ 
+    width:100%;
+    margin-left: 0;
+  }
+
+  .vignette {
+    grid-template-columns: 1fr 1fr;
+    background-color:white;
+    align-content: space-between;
+    margin-left: 0;
+  }
+
+
+}
+
+ /* Pour les ecrans type desktop */
+ @media only screen and (min-width: 992px) {
+
+ }
+

@@ -1,0 +1,111 @@
+/* typographie commun 
+Polices :
+Logo et titres: Shrikhand
+Texte: Roboto 
+*/
+
+/* Couleurs chartre graphique */
+$color-primaire: #9356DC;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+
+
+/*Body généralités polices et fond*/
+html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+
+body{
+    background-color:white;
+}
+
+header{
+  background-color:white;
+}
+
+
+a { /* Pour les balises liens de toute la page*/
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Définition des tailles de polices */
+
+/* H1 pour le titre principal */
+.policeH1{
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 32px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+/* H1 pour le titre des restaurants dans les menus */
+.policeH1Menu{
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 25px;
+  color: #333;
+  width: 100%;
+}
+
+/* H2 pour les titres des containers */
+.policeH2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin: 5px;
+}
+
+.policeH2Menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:gray;
+  margin: 5px;
+}
+
+.policeH3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 5px;
+  }
+
+.policeH4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 5px;
+  }
+
+
+/* H3 pour les vignettes */
+.policeVignetteTitre{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 5px;
+  }
+
+/* H4 pour les vignettes et Fonctionnement */
+.policeVignette{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin: 5px;
+}
+
+/* H3 pour le footer*/
+.policeFooterTitre{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 20px;
+    color:white;
+    margin: 5px;
+  }
+
+  /* H3 pour le footer*/
+.policeFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:white;
+    margin: 5px;
+  }
